@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>羅大佑歌曲補完計劃｜文字檔案</title>
+<style>
+:root{--bg:#f5f2eb;--paper:#fbf9f4;--ink:#25231f;--muted:#777168;--line:#d9d2c6;--red:#a63b30;--dark:#242320;--serif:"Noto Serif TC","Songti TC","PMingLiU",serif;--sans:"Noto Sans TC","Microsoft JhengHei",Arial,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:14px;line-height:1.8}
+a{color:inherit;text-decoration:none}button,input{font:inherit}
+.wrap{max-width:1180px;margin:auto;padding:0 34px}
+.topline{border-bottom:1px solid var(--line);font-size:10px;letter-spacing:1.5px;color:var(--muted);padding:10px 0}
+.header{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:26px 0 22px;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap}
+.brand h1{font-family:var(--serif);font-size:29px;letter-spacing:3px;line-height:1.2;margin:0}
+.brand span{font-size:9px;color:var(--muted);letter-spacing:1.1px}
+.nav{display:flex;gap:22px;flex-wrap:wrap;font-size:12px}
+.nav a{padding:6px 0;border-bottom:1px solid transparent}.nav a:hover,.nav a.active{color:var(--red);border-color:var(--red)}
+.hero{padding:70px 0 62px;display:grid;grid-template-columns:1fr 260px;gap:60px;align-items:end;border-bottom:1px solid var(--line)}
+.kicker{font-size:10px;letter-spacing:3px;color:var(--red);font-weight:700;margin-bottom:20px}
+.hero h2{font-family:var(--serif);font-size:clamp(38px,6vw,72px);line-height:1.25;letter-spacing:4px;margin:0 0 22px;font-weight:600}
+.hero .desc{font-family:var(--serif);font-size:17px;color:#5c574f;max-width:570px;line-height:2}
+.hero-aside{border-left:2px solid var(--red);padding-left:18px;color:var(--muted);font-size:12px}
+.hero-aside strong{display:block;color:var(--ink);font-family:var(--serif);font-size:20px;font-weight:500;margin-bottom:8px}
+.hero-aside p{margin:0}
+.actions{display:flex;gap:12px;margin-top:27px;flex-wrap:wrap}
+.btn{border:1px solid var(--ink);padding:9px 15px;font-size:12px;display:inline-flex;gap:16px;align-items:center}
+.btn.primary{background:var(--red);border-color:var(--red);color:#fff}.btn:hover{opacity:.78}
+.searchrow{display:flex;align-items:center;gap:16px;padding:22px 0;border-bottom:1px solid var(--line)}
+.searchrow label{font-family:var(--serif);font-size:16px;white-space:nowrap}
+.searchrow input{background:transparent;border:0;border-bottom:1px solid #bcb4a8;padding:10px 3px;outline:0;flex:1;min-width:100px}
+.filters{display:flex;gap:6px;flex-wrap:wrap}
+.filters button{background:transparent;border:1px solid var(--line);padding:5px 10px;color:var(--muted);font-size:11px;cursor:pointer}
+.filters button.active,.filters button:hover{background:var(--dark);border-color:var(--dark);color:#fff}
+.section{padding:42px 0;border-bottom:1px solid var(--line)}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:18px;margin-bottom:23px}
+.section-title{margin:0;font-family:var(--serif);font-size:25px;letter-spacing:2px;font-weight:600}
+.section-title small{font-family:var(--sans);font-size:9px;color:var(--red);letter-spacing:1.5px;margin-left:12px}
+.section-note{color:var(--muted);font-size:11px}
+.archive-list{border-top:1px solid var(--ink)}
+.archive-item{display:grid;grid-template-columns:60px minmax(0,1fr) 100px;gap:20px;padding:17px 4px;border-bottom:1px solid var(--line);align-items:start}
+.archive-item .no{font-family:var(--serif);font-size:20px;color:var(--red)}
+.archive-item h3{font-family:var(--serif);font-size:17px;font-weight:500;margin:0 0 3px}
+.archive-item p{margin:0;color:var(--muted);font-size:12px}
+.archive-item .meta{text-align:right;font-size:11px;color:var(--muted);padding-top:5px}
+.archive-item[hidden]{display:none}
+.columns{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.topic{padding:18px 0;border-top:1px solid var(--line)}
+.topic .num{font-size:10px;letter-spacing:2px;color:var(--red)}
+.topic h3{font-family:var(--serif);font-size:19px;font-weight:500;margin:5px 0}
+.topic p{font-size:12px;color:var(--muted);margin:0;max-width:480px}
+.timeline{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}
+.time{padding:20px 20px 0 0}
+.time strong{font-family:var(--serif);font-size:28px;color:var(--red);font-weight:500}
+.time h3{font-family:var(--serif);font-size:15px;margin:4px 0}
+.time p{font-size:12px;color:var(--muted);margin:0}
+.resource-list{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line)}
+.resource{padding:17px 15px;border-right:1px solid var(--line)}
+.resource:last-child{border-right:0}
+.resource strong{font-family:var(--serif);font-size:15px;font-weight:500;display:block}
+.resource span{font-size:10px;color:var(--red);letter-spacing:1px}
+.resource p{font-size:11px;color:var(--muted);margin:5px 0 0}
+.about{display:grid;grid-template-columns:180px 1fr;gap:35px}
+.about-label{font-size:10px;letter-spacing:2px;color:var(--red)}
+.about h2{font-family:var(--serif);font-size:22px;font-weight:500;margin:0 0 9px}
+.about p{max-width:720px;margin:0;color:var(--muted);font-size:12px}
+.footer{background:var(--dark);color:#e4ded3;padding:27px 0;margin-top:0}
+.footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center}
+.footer-title{font-family:var(--serif);font-size:18px;letter-spacing:2px}
+.footer small{color:#a7a095;font-size:10px}
+.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--dark);color:white;padding:10px 16px;font-size:12px;opacity:0;pointer-events:none;transition:.2s}
+@media(max-width:760px){.wrap{padding:0 20px}.header{align-items:flex-start;flex-direction:column}.nav{gap:15px}.hero{padding:46px 0;grid-template-columns:1fr;gap:25px}.hero h2{font-size:43px}.hero-aside{max-width:360px}.searchrow{align-items:stretch;flex-direction:column}.columns{grid-template-columns:1fr;gap:24px}.archive-item{grid-template-columns:34px minmax(0,1fr);gap:12px}.archive-item .meta{grid-column:2;text-align:left;padding:0}.timeline{grid-template-columns:1fr}.time{padding:15px 0;border-bottom:1px solid var(--line)}.resource-list{grid-template-columns:1fr 1fr}.resource:nth-child(2){border-right:0}.resource:nth-child(-n+2){border-bottom:1px solid var(--line)}.about{grid-template-columns:1fr;gap:10px}.footer-inner{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="topline"><div class="wrap">OPEN MUSIC ARCHIVE　/　收錄・解讀・研究　/　持續補完中</div></div>
+<div class="wrap">
+<header class="header">
+  <a class="brand" href="#top"><h1>羅大佑歌曲補完計劃</h1><span>LUO DAYOU SONGS ARCHIVE PROJECT</span></a>
+  <nav class="nav"><a class="active" href="#top">首頁</a><a href="#catalog">曲目庫</a><a href="#research">專題研究</a><a href="#regions">兩岸三地</a><a href="#resources">資源中心</a><a href="#about">關於</a></nav>
+</header>
+<main id="top">
+<section class="hero">
+ <div><div class="kicker">A LISTENING ARCHIVE · EST. 2026</div><h2>讓每一首歌，<br>都有來處。</h2><div class="desc">以羅大佑作品為中心，整理曲目、版本、創作背景與傳播脈絡。從一張唱片開始，補完歌曲背後的時代記憶。</div>
+ <div class="actions"><a class="btn primary" href="#catalog">進入曲目庫 <span>↗</span></a><a class="btn" href="#research">閱讀研究索引 <span>↗</span></a></div></div>
+ <aside class="hero-aside"><strong>不只是收藏歌曲</strong><p>也是一份持續更新的華語流行音樂索引。資料逐條核對，來源盡可能公開，版本差異留下註記。</p></aside>
+</section>
+<section class="searchrow" id="catalog"><label for="q">曲目檢索</label><input id="q" placeholder="輸入歌名、專輯、年代或關鍵字…"><div class="filters"><button class="active" data-filter="all">全部</button><button data-filter="album">專輯</button><button data-filter="research">研究</button><button data-filter="region">地域</button></div></section>
+<section class="section">
+ <div class="section-head"><div><h2 class="section-title">曲目與專輯索引 <small>THE CATALOG</small></h2><div class="section-note">以下為網站內容架構示例，正式資料將逐項核對。</div></div><span class="section-note">條目 001—006</span></div>
+ <div class="archive-list" id="entries">
+  <a class="archive-item" data-type="album" data-text="之乎者也 專輯 台灣 1982" href="#resources"><span class="no">01</span><div><h3>《之乎者也》</h3><p>專輯檔案　／　曲目表、版本資訊、創作背景與相關文獻</p></div><div class="meta">專輯條目　↗</div></a>
+  <a class="archive-item" data-type="album" data-text="愛人同志 專輯 1988" href="#resources"><span class="no">02</span><div><h3>《愛人同志》</h3><p>專輯檔案　／　作品脈絡、時代語境與版本整理</p></div><div class="meta">專輯條目　↗</div></a>
+  <a class="archive-item" data-type="album region" data-text="皇后大道東 香港 1991 特異歌曲" href="#regions"><span class="no">03</span><div><h3>〈皇后大道東〉</h3><p>歌曲專題　／　香港語境、歌詞解讀、傳播與改編版本</p></div><div class="meta">研究條目　↗</div></a>
+  <a class="archive-item" data-type="research" data-text="東方之珠 地域 香港 台灣 研究" href="#regions"><span class="no">04</span><div><h3>〈東方之珠〉</h3><p>歌曲專題　／　不同演唱版本、地域指涉與文化記憶</p></div><div class="meta">研究條目　↗</div></a>
+  <a class="archive-item" data-type="research region" data-text="兩岸三地 特異歌曲 地域研究" href="#regions"><span class="no">05</span><div><h3>兩岸三地「特異歌曲」索引</h3><p>依歌曲的流傳地區、語境差異、改編與接受史分類。</p></div><div class="meta">專題索引　↗</div></a>
+  <a class="archive-item" data-type="research" data-text="版本比對 歌詞 編曲 現場錄音" href="#resources"><span class="no">06</span><div><h3>版本比對工作台</h3><p>整理錄音室版、現場版、翻唱版與影像資料的差異。</p></div><div class="meta">工具索引　↗</div></a>
+ </div><p id="empty" style="display:none;color:var(--muted);font-size:12px">沒有符合的條目，請試試其他關鍵字。</p>
+</section>
+<section class="section" id="research">
+ <div class="section-head"><div><h2 class="section-title">研究方法 <small>RESEARCH NOTES</small></h2><div class="section-note">讓每篇解讀都有線索、有依據，也能被修訂。</div></div></div>
+ <div class="columns">
+  <article class="topic" data-type="research"><div class="num">01 / SONG CONTEXT</div><h3>歌曲背景與歌詞解讀</h3><p>以創作年代、詞曲資訊、意象與社會背景為基本欄位；引用資料與推論分開標註，避免把詮釋寫成定論。</p></article>
+  <article class="topic" data-type="region"><div class="num">02 / REGIONAL DIFFERENCES</div><h3 id="regions">兩岸三地的特殊語境</h3><p>比較歌曲在台灣、香港與中國內地的傳播、接受、演出及改編情況，記錄差異而非預設單一解讀。</p></article>
+  <article class="topic" data-type="research"><div class="num">03 / VERSION HISTORY</div><h3>錄音、現場與翻唱版本</h3><p>建立版本關係，標明演出日期、發行載體、編曲差異及可追溯的來源連結。</p></article>
+  <article class="topic" data-type="research"><div class="num">04 / SOURCES & CORRECTIONS</div><h3>資料來源與勘誤紀錄</h3><p>每筆資料預留來源、核對狀態、修訂日期與補充說明，讓檔案可以持續被完善。</p></article>
+ </div>
+</section>
+<section class="section" id="timeline">
+ <div class="section-head"><div><h2 class="section-title">作品時間線 <small>CHRONOLOGY</small></h2><div class="section-note">先建立骨架，再逐年補充作品與事件。</div></div></div>
+ <div class="timeline">
+  <article class="time"><strong>1982</strong><h3>《之乎者也》</h3><p>以專輯為起點，建立歌曲與唱片資料的基本索引。</p></article>
+  <article class="time"><strong>1988</strong><h3>《愛人同志》</h3><p>將作品放回創作年代與社會文化背景中閱讀。</p></article>
+  <article class="time"><strong>1991</strong><h3>《皇后大道東》</h3><p>延伸至香港流行文化與兩岸三地的歌曲語境。</p></article>
+ </div>
+</section>
+<section class="section" id="resources">
+ <div class="section-head"><div><h2 class="section-title">相關資源 <small>MEDIA INDEX</small></h2><div class="section-note">索引資源，不直接託管未確認授權的音樂檔案。</div></div></div>
+ <div class="resource-list">
+  <div class="resource"><strong>MIDI 與伴奏</strong><span>MIDI / KARAOKE</span><p>收錄合法來源、演奏版本與編曲資訊。</p></div>
+  <div class="resource"><strong>MV 與影像</strong><span>VIDEO ARCHIVE</span><p>連結官方影像、現場演出與可考證片段。</p></div>
+  <div class="resource"><strong>演奏與翻唱</strong><span>COVER VERSIONS</span><p>整理翻唱者、版本年代與來源。</p></div>
+  <div class="resource"><strong>文獻與訪談</strong><span>REFERENCES</span><p>書目、報刊、訪談及研究文章索引。</p></div>
+ </div>
+</section>
+<section class="section about" id="about">
+ <div class="about-label">ABOUT THE PROJECT</div><div><h2>一個開放、可校對、持續補完的音樂檔案。</h2><p>本網站採用純文字與排版優先的設計：不依賴封面圖片，讓資料本身成為主角。專輯年份、曲目與版本資訊在正式發布前需逐項核實；音樂及影像以合法來源連結為主，並保留來源與修訂紀錄。</p></div>
+</section>
+</main>
+</div>
+<footer class="footer"><div class="wrap footer-inner"><div><div class="footer-title">羅大佑歌曲補完計劃</div><small>LUO DAYOU SONGS ARCHIVE PROJECT</small></div><small>因為有歌，我們還記得。</small><small>文字版 UI 原型　／　持續補完中</small></div></footer>
+<div class="toast" id="toast"></div>
+<script>
+const q=document.getElementById('q'), items=[...document.querySelectorAll('.archive-item')], buttons=[...document.querySelectorAll('.filters button')];let type='all';
+function filter(){let term=q.value.trim().toLowerCase(),count=0;items.forEach(el=>{let okText=(el.dataset.text+' '+el.innerText).toLowerCase().includes(term);let okType=type==='all'||el.dataset.type.split(' ').includes(type);el.hidden=!(okText&&okType);if(okText&&okType)count++});document.getElementById('empty').style.display=count?'none':'block'}
+q.addEventListener('input',filter);buttons.forEach(b=>b.addEventListener('click',()=>{type=b.dataset.filter;buttons.forEach(x=>x.classList.toggle('active',x===b));filter()}));
+</script>
+</body>
+</html>
